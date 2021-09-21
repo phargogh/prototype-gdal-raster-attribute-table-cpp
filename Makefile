@@ -17,4 +17,4 @@ raster.tif:
 	$(PYTHON) makeraster.py
 
 showrat:
-	gcc -o showrat showrat.cpp
+	gcc -o showrat -I $$CONDA_PREFIX/include -std=c++11 showrat.cpp
